@@ -1,4 +1,5 @@
 import pandas
+import numpy as np
 def main():
     Employe_name = input("Enter Employe details: ")
     Employe_Id = int(input("Enter Employe Id : "))
@@ -8,5 +9,7 @@ def main():
         "Employe Id":[Employe_Id],
         "Employe salary":[Employe_salary]
     })
+    data1 = np.array([Employe_name],[Employe_Id],[Employe_salary])
 
+    print(data1)
     print(Data)
