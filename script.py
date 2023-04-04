@@ -1,14 +1,25 @@
-#pandas
-#edited
-#import pandas
-#FFWF
+class Person(object):
+
+	# __init__ is known as the constructor
+	def __init__(self, name, idnumber):
+		self.name = name
+		self.idnumber = idnumber
+
+	def display(self):
+		print(self.name)
+		print(self.idnumber)
 
 
-def main():
-    Employe_name = input("Enter Employe details: ")
-    Employe_Id = int(input("Enter Employe Id : "))
-    Employe_salary = float(input("Enter salary details : "))
-    print(Employe_name)
 
-    print(Data)
-main()
+class Employee(Person):
+	def __init__(self, name, idnumber, salary, post):
+		self.salary = salary
+		self.post = post
+
+		# invoking the __init__ of the parent class
+		Person.__init__(self, name, idnumber)
+
+
+a = Employee('Rahul', 886012, 200000, "Intern")
+
+.display()
