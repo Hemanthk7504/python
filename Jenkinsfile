@@ -1,7 +1,7 @@
 pipeline {
-    agent {
-        label 'python'
-    }
+    agent any
+      
+    
     stages {
         stage('Run Python Script') {
             steps {
