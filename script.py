@@ -1,5 +1,5 @@
 def main():
-  a = "Hemanth kumar"
+  a = "Hemanth k"
   for i in a:
     print(i)
 main()
